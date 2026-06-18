@@ -1,0 +1,27 @@
+# Paczki i zależności
+node_modules/
+dist/
+npm-debug.log*
+
+# Pliki środowiskowe i wrażliwe
+.env
+.env.local
+wp-config.php
+*.log
+*.sql
+
+# Systemowe (Windows / Mac)
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Edytory kodu
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# WordPressowe śmieci
+sitemap.xml
+sitemap.xml.gz

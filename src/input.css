@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@layer base {
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+@layer components {
+  .bg-gradient-green {
+    background-image: linear-gradient(to right, rgba(0, 182, 100, 1), rgba(9, 156, 86, 1));
+  }
+}
+@layer utilities {
+  /* Ukrycie scrollbara */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
