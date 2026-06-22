@@ -31,6 +31,13 @@
         </section>
     <?php }, "!px-0 md:!px-6"); ?>
 </footer>
+<div id="booking-popup" class="booking-popup" aria-hidden="true">
+    <div class="booking-popup__overlay" role="presentation"></div>
+    <div class="booking-popup__content" role="dialog" aria-modal="true" aria-label="<?php echo esc_attr__('Rezerwacja', 'drzewna'); ?>">
+        <button type="button" id="booking-popup-close" class="booking-popup__close" aria-label="<?php echo esc_attr__('Zamknij', 'drzewna'); ?>">&times;</button>
+        <iframe id="booking-popup-frame" title="<?php echo esc_attr__('Silnik rezerwacji', 'drzewna'); ?>" src="" loading="lazy"></iframe>
+    </div>
+</div>
 <?php wp_footer(); ?>
 </body>
 </html>
