@@ -188,7 +188,7 @@ function nav_item($href, $label, $current_path) {
 
         <div class="flex items-center gap-x-4">
             <!-- BTN REZERWUJ -->
-            <a href="/rezerwacja" class="text-white text-xs shadow-md shadow-black/40 block px-4 py-3 lg:px-6 bg-gradient-green rounded-2xl lg:text-sm" aria-label="Zarezerwuj apartament - otwórz formularz rezerwacji">
+            <a href="/rezerwacja" class="open-booking-engine text-white text-xs shadow-md shadow-black/40 block px-4 py-3 lg:px-6 bg-gradient-green rounded-2xl lg:text-sm" aria-label="Zarezerwuj apartament - otwórz formularz rezerwacji">
                 Rezerwuj Online
             </a>
 
@@ -248,7 +248,7 @@ function nav_item($href, $label, $current_path) {
                     <h1 class="text-lg font-medium mb-2 leading-10 md:mb-4 md:leading-14 md:text-3xl ">DRZEWNA APARTAMENTY <br /> <span class="text-5xl font-bold md:text-6xl">ZIELONA GÓRA</span></h1>
                     <p class="text-sm leading-6 max-w-lg md:text-base">Odkryj komfortowe apartamenty w centrum Zielonej Góry. Ciesz się klimatem miasta, restauracjami i atrakcjami w zasięgu krótkiego spaceru.</p>
                 </section>
-                <div class="mt-6 h-14 w-full max-w-180 bg-black rounded-xl"></div>
+                <div id="gs-booking-bar" class="gs-booking-widget mt-6 w-full max-w-180"></div>
             </div>
         <?php }); ?>
     </div>

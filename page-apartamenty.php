@@ -11,9 +11,18 @@
                 <a href="/apartamenty">Apartamenty</a>
             </div>
         </div>
-        <!-- HERO -->
-        <div class="relative bg-black/20 aspect-video max-h-100 w-full flex justify-center items-center md:rounded-xl text-center">
-            <p class="text-xl tracking-widest">Podstrona w trakcie tworzenia..</p>
+        <!-- BOOKING IFRAME -->
+        <div class="w-full overflow-hidden md:rounded-xl">
+            <iframe
+                id="zarezerwuj"
+                title="<?php echo esc_attr__('Rezerwacja apartamentów', 'drzewna'); ?>"
+                src=""
+                class="block w-full max-w-full border-0"
+                width="100%"
+                height="800"
+                scrolling="no"
+                loading="lazy"
+            ></iframe>
         </div>
     <?php }, "!px-0 space-y-6 md:!px-6 md:space-y-12"); ?>
 </main>

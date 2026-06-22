@@ -120,6 +120,10 @@ if (is_dir($components_dir)) {
     }
 }
 
+require_once get_template_directory() . '/includes/helpers.php';
+require_once get_template_directory() . '/includes/BookingModule.php';
+\Drzewna\BookingModule::register();
+
 function drzewna_attachment_image($key, $size = 'medium', $attr = []) {
     if (!isset(DRZEWNA_ATTACHMENT_IDS[$key])) {
         return '';

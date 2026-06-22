@@ -1,0 +1,46 @@
+.booking-popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+}
+
+.booking-popup.is-active {
+  display: block;
+}
+
+.booking-popup__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.booking-popup__content {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  z-index: 2;
+}
+
+.booking-popup__close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  z-index: 3;
+  font-size: 36px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: #000;
+}
+
+.booking-popup iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.open-booking-engine {
+  cursor: pointer;
+}
